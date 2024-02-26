@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quran for Everyone</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div>
+<div class="logo-navbar">
+   <img class="logo" src="/frontend/Quranic_2.svg" alt="logo">
+</div>
+</div>
+
+
+
+
+<div class="chat-container" id="chatContainer">
+    <div class="chat-message chat-message-left">
+        <div class="message-text" id="assistantMessage">
+            <span class="message-number"></span>
+            <span class="message-content">Hello! How can I assist you today?</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="input-container" id="inputContainer">
+    <div class="input-wrapper">
+        <input type="text" id="textInput" class="user-input" placeholder="Type your message here...">
+        <button onclick="sendMessage()" class="send-button">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

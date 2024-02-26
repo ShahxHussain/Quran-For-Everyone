@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.logo-navbar{
+    height: 10vh;
+    width: 100%;
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1f4037, #99f2c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1f4037, #99f2c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.logo{
+    width: 27vh;
+    margin-top: -66px;
+    margin-left: 1em;
+    border-radius: 16px;
+}
+.chat-container {
+    max-height: calc(96vh - 150px);
+    overflow-y: auto;
+    padding: 20px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    /* background-color: #52dcb7; */
+}
+
+.chat-message {
+    margin-bottom: 15px;
+}
+
+.chat-message-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.chat-message-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.message-text {
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 94%;
+    word-wrap: break-word; /* Allow text wrapping */
+}
+
+.user-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    min-width: calc(100% - 70px);
+    width: calc(100% - 240px);
+    background-color: #fff;
+}
+
+.send-button {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 12px;
+    background-color:#1f4037; 
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color:#fff;
+    color: #1f4037; 
+}
+
+.input-container {
+    position: fixed;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.system-response {
+    background-color: #f0f0f0;
+}
+
+.user-input, .system-response {
+    margin-bottom: 15px;
+}
